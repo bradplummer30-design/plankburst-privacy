@@ -24,7 +24,7 @@ of Bradly Plummer and are not covered by the notices below.
    Native ad-network SDK resolved through CocoaPods for the iOS build. Subject to the ironSource terms linked above and the
    ironSource privacy policy: https://www.is.com/privacy-policy/
 
-5a. Unity Ads adapter for LevelPlay (IronSourceUnityAdsAdapter 5.13.0.0, bundling the Unity Ads SDK), Unity Technologies
+5a. Unity Ads adapter for LevelPlay (IronSourceUnityAdsAdapter 5.13.0.0, with the Unity Ads SDK 4.21.0 and UnityCoherenceLib 0.2.0), Unity Technologies
    Native adapter resolved through CocoaPods so the Unity Ads network can serve interstitials through LevelPlay. Subject to
    the Unity Terms of Service (https://unity.com/legal/terms-of-service) and the Unity Game Player and App User Privacy
    Policy (https://unity.com/legal/game-player-and-app-user-privacy-policy).
