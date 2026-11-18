@@ -1,35 +1,48 @@
-PLANKBURST (iOS) - third-party software notices
-Published 2026-10-21 (also shown inside the game: Settings > About > THIRD-PARTY NOTICES). Prepared from the packages pinned in UnityProject/Packages/manifest.json and the
-native dependencies resolved for the iOS build. PLANKBURST's own code, graphics and synthesized sounds are project assets
-of Bradly Plummer and are not covered by the notices below.
+PLANKBURST 1.0.2 (iOS) - third-party notices
+Published 18 November 2026 (also shown inside the game: Settings > About > THIRD-PARTY NOTICES). Prepared from the in-game list, the packages
+pinned in UnityProject/Packages/manifest.json and the native dependencies resolved for the iOS build. PLANKBURST's own code, graphics,
+synthesized sounds and music theme are project assets of Bradly Plummer and are not covered by the notices below.
 
-1. Unity engine 6000.3.26f1 (Unity Technologies)
-   Runtime modules of the Unity engine. Licensed under the Unity Software Additional Terms / Unity Terms of Service:
-   https://unity.com/legal
+1. Universal Sound FX 1.6 (Imphenzia)
+   46 selected sound files (water and splashes, a sea loop, springs, wooden contacts, thuds, metal mechanisms, chain and rope loops,
+   stone, fabric and paper, wind and city air, whooshes, interface clicks and toggles, xylophone notes, a rocket thruster), trimmed,
+   looped and level-matched for the game; audio files only, no code. Two of its notes are also used as instruments in the game's music. Used under the Unity Asset Store End User License Agreement (Standard).
 
-2. Unity In-App Purchasing (com.unity.purchasing 5.4.4, Unity Technologies)
-   Apple StoreKit integration used for Remove Ads and the runner skins. Subject to the terms of service for the IAP Service:
-   https://unity3d.com/legal/one-operate-services-terms-of-service . The package's own LICENSE.md and
+2. DOTween 1.2.825 (Demigiant - Daniele Giardini)
+   The DOTween tweening library (the core DOTween.dll and its DOTweenModuleUtils module file from the DOTween Pro 1.0.410 package,
+   physics modules switched off; no Pro components) animates menu fades and small interface transitions.
+   Copyright (c) 2014-2018 Daniele Giardini - Demigiant. License: https://dotween.demigiant.com/license.php ; DOTween Pro under the
+   Unity Asset Store End User License Agreement (Standard). It runs inside the game only and sends nothing anywhere.
+
+3. Unity engine 6000.3.26f1 (Unity Technologies)
+   Runtime modules of the Unity engine, including the Game Center integration used for the leaderboard. Licensed under the Unity
+   Software Additional Terms / Unity Terms of Service: https://unity.com/legal
+
+4. Unity In-App Purchasing (com.unity.purchasing 5.4.4, Unity Technologies)
+   Apple StoreKit integration used for Remove Ads and the runners sold in the Crew Shop. Subject to the terms of service for the IAP
+   Service: https://unity3d.com/legal/one-operate-services-terms-of-service . The package's own LICENSE.md and
    "Third Party Notices.md" are shipped in the package.
 
-3. Unity Services Core (com.unity.services.core, Unity Technologies) - required by the packages above.
+5. Unity Services Core (com.unity.services.core, Unity Technologies) - required by the packages above.
    Subject to the Unity Terms of Service: https://unity.com/legal
 
-4. Unity LevelPlay - Ads Mediation (com.unity.services.levelplay 9.3.2, Unity Technologies)
-   Interstitial ad mediation. Subject to the terms of service for the Mediation Platform / Mediation Services:
+6. Unity LevelPlay - Ads Mediation (com.unity.services.levelplay 9.3.2, Unity Technologies)
+   Interstitial ad mediation (interstitial only: one ad can appear only on the Run Over screen, after three runs have ended; watching
+   an ad to CONTINUE a run is not offered in this version). Subject to the terms of service for the Mediation Platform:
    https://developers.is.com/ironsource-mobile/general/ironsource-mobile-ads-mediation-platform-terms-of-service/
    The package's own LICENSE.md and "Third Party Notices.md" are shipped in the package.
 
-5. ironSource Ads SDK for iOS (IronSourceSDK 9.6.1.0, with IronSourceAdQualitySDK 9.10.0), Unity Technologies / ironSource
-   Native ad-network SDK resolved through CocoaPods for the iOS build. Subject to the ironSource terms linked above and the
-   ironSource privacy policy: https://www.is.com/privacy-policy/
+7. ironSource SDK for iOS (IronSourceSDK/Ads 9.6.1.0, without the Ad Quality module), Unity Technologies / ironSource
+   Native LevelPlay mediation SDK with ironSource Exchange demand, resolved through CocoaPods for the iOS build. Started only after
+   the player chose 18 or older, allowed ads and allowed tracking; never for a Remove Ads owner or before the App Store has confirmed
+   ownership. Subject to the ironSource terms linked above and the ironSource privacy policy: https://www.is.com/privacy-policy/
 
-5a. Unity Ads adapter for LevelPlay (IronSourceUnityAdsAdapter 5.13.0.0, with the Unity Ads SDK 4.21.0 and UnityCoherenceLib 0.2.0), Unity Technologies
-   Native adapter resolved through CocoaPods so the Unity Ads network can serve interstitials through LevelPlay. Subject to
-   the Unity Terms of Service (https://unity.com/legal/terms-of-service) and the Unity Game Player and App User Privacy
-   Policy (https://unity.com/legal/game-player-and-app-user-privacy-policy).
+8. Unity Ads adapter for LevelPlay (IronSourceUnityAdsAdapter 5.13.0.0, with the Unity Ads SDK 4.21.0 and UnityCoherenceLib 0.2.0), Unity Technologies
+   Native adapter resolved through CocoaPods so the Unity Ads network can serve interstitials through LevelPlay. Started only through
+   LevelPlay, under the same conditions. Subject to the Unity Terms of Service (https://unity.com/legal/terms-of-service) and the
+   Unity Game Player and App User Privacy Policy (https://unity.com/legal/game-player-and-app-user-privacy-policy).
 
-6. External Dependency Manager for Unity (Mobile Dependency Resolver 1.2.185), Google LLC
+9. External Dependency Manager for Unity (Mobile Dependency Resolver 1.2.185), Google LLC
    Build-time dependency resolver (not part of the shipped app binary).
    Copyright (C) 2014 Google Inc.
    Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the
@@ -38,9 +51,9 @@ of Bradly Plummer and are not covered by the notices below.
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language
    governing permissions and limitations under the License.
 
-7. Fonts
+10. Fonts
    The game renders text with the operating system's fonts (Menlo / Consolas-class monospace and the system sans-serif);
    no third-party font files are bundled.
 
-Trademarks: Unity, Unity LevelPlay and ironSource are trademarks of Unity Technologies; Apple, App Store and StoreKit are
+Trademarks: Unity, Unity LevelPlay and ironSource are trademarks of Unity Technologies; Apple, App Store, StoreKit and Game Center are
 trademarks of Apple Inc.; Google is a trademark of Google LLC.
