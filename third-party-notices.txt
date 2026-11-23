@@ -1,5 +1,5 @@
-PLANKBURST 1.0.2 (iOS) - third-party notices
-Published 18 November 2026 (also shown inside the game: Settings > About > THIRD-PARTY NOTICES). Prepared from the in-game list, the packages
+PLANKBURST 1.0.3 (iOS) - third-party notices
+Published 23 November 2026 for version 1.0.3, which reaches players once Apple approves it and it is released (also shown inside the game: Settings > PRIVACY > PRIVACY SETTINGS > THIRD-PARTY NOTICES). Earlier edition: 18 November 2026 for 1.0.2. Prepared from the in-game list, the packages
 pinned in UnityProject/Packages/manifest.json and the native dependencies resolved for the iOS build. PLANKBURST's own code, graphics,
 synthesized sounds and music theme are project assets of Bradly Plummer and are not covered by the notices below.
 
@@ -27,19 +27,22 @@ synthesized sounds and music theme are project assets of Bradly Plummer and are 
    Subject to the Unity Terms of Service: https://unity.com/legal
 
 6. Unity LevelPlay - Ads Mediation (com.unity.services.levelplay 9.3.2, Unity Technologies)
-   Interstitial ad mediation (interstitial only: one ad can appear only on the Run Over screen, after three runs have ended; watching
-   an ad to CONTINUE a run is not offered in this version). Subject to the terms of service for the Mediation Platform:
+   Ad mediation for an optional rewarded ad (WATCH AD TO CONTINUE on the Run Over card) and an interstitial that can appear when the
+   player leaves Run Over after every third finished run. Subject to the terms of service for the Mediation Platform:
    https://developers.is.com/ironsource-mobile/general/ironsource-mobile-ads-mediation-platform-terms-of-service/
    The package's own LICENSE.md and "Third Party Notices.md" are shipped in the package.
 
 7. ironSource SDK for iOS (IronSourceSDK/Ads 9.6.1.0, without the Ad Quality module), Unity Technologies / ironSource
-   Native LevelPlay mediation SDK with ironSource Exchange demand, resolved through CocoaPods for the iOS build. Started only after
-   the player chose 18 or older, allowed ads and allowed tracking; never for a Remove Ads owner or before the App Store has confirmed
-   ownership. Subject to the ironSource terms linked above and the ironSource privacy policy: https://www.is.com/privacy-policy/
+   Native LevelPlay mediation SDK, resolved through CocoaPods for the iOS build; it also contains the ironSource Exchange, which
+   version 1.0.3 does not use for its ads (Unity Ads is the only network). Started once iOS has an answer to Apple's tracking
+   question for PLANKBURST (either answer) - never for a Remove Ads owner, before the App Store has confirmed ownership,
+   for a player an earlier version recorded as under 18, or in the EEA, the UK and Switzerland; every request is sent with
+   consent = false and do-not-sell (in 1.0.2: only after the player chose 18 or older, allowed ads and allowed tracking). Subject to the ironSource terms linked above and the ironSource privacy policy: https://www.is.com/privacy-policy/
 
 8. Unity Ads adapter for LevelPlay (IronSourceUnityAdsAdapter 5.13.0.0, with the Unity Ads SDK 4.21.0 and UnityCoherenceLib 0.2.0), Unity Technologies
-   Native adapter resolved through CocoaPods so the Unity Ads network can serve interstitials through LevelPlay. Started only through
-   LevelPlay, under the same conditions. Subject to the Unity Terms of Service (https://unity.com/legal/terms-of-service) and the
+   Native adapter resolved through CocoaPods so the Unity Ads network - the only network serving 1.0.3's ads - can serve interstitial and rewarded ads through LevelPlay (bidding). Started only through
+   LevelPlay, under the same conditions; the network is told consent = false and do-not-sell (non-personalized ads) and that the
+   request is not child-directed. Subject to the Unity Terms of Service (https://unity.com/legal/terms-of-service) and the
    Unity Game Player and App User Privacy Policy (https://unity.com/legal/game-player-and-app-user-privacy-policy).
 
 9. External Dependency Manager for Unity (Mobile Dependency Resolver 1.2.185), Google LLC
