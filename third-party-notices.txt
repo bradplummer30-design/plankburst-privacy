@@ -1,5 +1,5 @@
 PLANKBURST 1.0.3 (iOS) - third-party notices
-Published 23 November 2026 for version 1.0.3, which reaches players once Apple approves it and it is released (also shown inside the game: Settings > PRIVACY > PRIVACY SETTINGS > THIRD-PARTY NOTICES). Earlier edition: 18 November 2026 for 1.0.2. Prepared from the in-game list, the packages
+Published 23 November 2026 for version 1.0.3, released on the App Store on 23 November 2026 (also shown inside the game: Settings > PRIVACY > PRIVACY SETTINGS > THIRD-PARTY NOTICES). Earlier edition: 18 November 2026 for 1.0.2. Prepared from the in-game list, the packages
 pinned in UnityProject/Packages/manifest.json and the native dependencies resolved for the iOS build. PLANKBURST's own code, graphics,
 synthesized sounds and music theme are project assets of Bradly Plummer and are not covered by the notices below.
 
